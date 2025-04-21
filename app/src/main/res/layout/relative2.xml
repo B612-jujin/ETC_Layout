@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Relative2Activity">
+
+    <TextView
+        android:id="@+id/baseText"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="기준 위젯"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/baseText"
+        android:layout_toLeftOf="@+id/baseText"
+        android:text="1번"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/baseText"
+        android:layout_toLeftOf="@+id/baseText"
+        android:text="2번"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/baseText"
+        android:layout_toLeftOf="@+id/baseText"
+        android:text="3번"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/baseText"
+        android:layout_above="@+id/baseText"
+        android:text="4번"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/baseText"
+        android:layout_alignRight="@+id/baseText"
+        android:text="5번"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/baseText"
+        android:layout_above="@+id/baseText"
+        android:text="6번"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/baseText"
+        android:layout_above="@+id/baseText"
+        android:text="7번"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/baseText"
+        android:layout_toRightOf="@+id/baseText"
+        android:text="8번"/>
+
+</RelativeLayout>
